@@ -1,0 +1,19 @@
+{
+    "name": "elazar/odmp-scraper",
+    "description": "A scraper for odmp.org",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5",
+        "ext-sqlite3": "*",
+        "symfony/console": "^2.7",
+        "fabpot/goutte": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elazar\\OdmpScraper\\": "src"
+        }
+    },
+    "bin": [
+        "bin/odmp"
+    ]
+}
