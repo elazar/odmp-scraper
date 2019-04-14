@@ -264,8 +264,7 @@ class DownloadCommand extends Command
             return null;
         }
         $p_text = $p->text();
-        if (preg_match('/of ([0-9]+)/', $p_text, $match)
-            || preg_match('/through ([0-9]+)/', $p_text, $match)) {
+        if (preg_match('/(?:of|through) ([0-9]+)/', $p_text, $match)) {
             return (int) $match[1];
         }
         return null;
